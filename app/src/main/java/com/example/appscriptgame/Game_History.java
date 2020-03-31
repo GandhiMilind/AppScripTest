@@ -31,9 +31,9 @@ public class Game_History extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         Intent intent = new Intent(Game_History.this,MainActivity.class);
         startActivity(intent);
         finish();
+        overridePendingTransition(R.anim.enter, R.anim.exit);
     }
 }

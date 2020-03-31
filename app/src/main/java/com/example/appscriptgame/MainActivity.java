@@ -279,11 +279,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(MainActivity.this, Game_History.class);
                 startActivity(intent);
                 finish();
+                overridePendingTransition(R.anim.enter, R.anim.exit);
+
                 break;
 
             case R.id.finishclick:
                 intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
                 finish();
                 break;
 

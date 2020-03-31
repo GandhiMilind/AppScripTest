@@ -32,6 +32,7 @@ public class Splash_Activity extends AppCompatActivity {
                 if(!ispause) {
                     Intent intent = new Intent(Splash_Activity.this, MainActivity.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.enter, R.anim.exit);
                     finish();
                 }else
                 {
